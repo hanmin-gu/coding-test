@@ -1,5 +1,3 @@
-
-
 import java.util.*;
 
 public class Main {
@@ -15,7 +13,6 @@ public class Main {
         Stack<Integer> stack4 = new Stack<>();
         String result = "YES";
 
-
         for (int i = 0; i < number; i++) {
             if (stack1.empty() || stack1.peek() < Integer.parseInt(numbers[i])) {
                 stack1.push(Integer.parseInt(numbers[i]));
@@ -28,15 +25,8 @@ public class Main {
             } else {
                 result = "NO";
             }
-
         }
-
-
         if ("NO".equals(result)) System.out.println("NO");
-
-
         if ("YES".equals(result)) System.out.println("YES");
     }
-
-
 }
