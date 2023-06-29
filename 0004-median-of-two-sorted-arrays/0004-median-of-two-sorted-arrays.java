@@ -32,9 +32,7 @@ class Solution {
         }
     
         if(n % 2 == 0){
-            System.out.print(result[(n/2)]);
-            number = (result[(n / 2) - 1] + result[n / 2]) / (double) 2;
-            return number;
+            return (result[(n / 2) - 1] + result[n / 2]) / (double) 2;
         }
         return result[n / 2];
     }
