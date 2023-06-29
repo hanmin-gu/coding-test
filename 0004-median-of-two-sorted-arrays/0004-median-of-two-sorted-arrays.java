@@ -6,8 +6,7 @@ class Solution {
         int index2 = 0;
         for(int i = 0; i < n; i++){
             if(index1 == nums1.length){
-                result[i] = nums2[index2];
-                index2++;
+                result[i] = nums2[index2++];
             }
             else if(index2 == nums2.length){
                 result[i] = nums1[index1];
