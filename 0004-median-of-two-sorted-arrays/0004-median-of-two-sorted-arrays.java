@@ -9,23 +9,19 @@ class Solution {
                 result[i] = nums2[index2++];
             }
             else if(index2 == nums2.length){
-                result[i] = nums1[index1];
-                index1++;
+                result[i] = nums1[index1++];
             }
             else if(nums1[index1] < nums2[index2]){
-                result[i] = nums1[index1];
-                index1++;
+                result[i] = nums1[index1++];
             }
             else if (nums2[index2] < nums1[index1]){
-                result[i] = nums2[index2];
-                index2++;
+                result[i] = nums2[index2++];
             }
             else{
-                result[i] = nums1[index1];
+                result[i] = nums1[index1++];
                 i++;
-                result[i] = nums2[index2];
-                index1++;
-                index2++;
+                result[i] = nums2[index2++];
+            
             }
         }
     
