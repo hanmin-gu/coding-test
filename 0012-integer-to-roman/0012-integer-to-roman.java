@@ -8,6 +8,8 @@ class Solution {
         String result = "";
         
         for(int i = 0; i < 13; i++){
+            if(num ==0 )break;
+            
             while(num >= values[i]){
                 result += symbols[i];
                 num -= values[i];
