@@ -18,7 +18,7 @@ class Solution {
         
         for(int j = 0; j < callings.length; j++){
             index = map.get(callings[j]);
-            //System.out.println(index);
+        
             
             frontWord = players[index - 1];
             backWord = players[index];
